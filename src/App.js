@@ -1,11 +1,17 @@
-// import MyComponent from "./MyComponent";
-// import EventPractice from "./EventPractice";
-import ValidationSample from "./ValidationSample";
+import { Component } from 'react';
+// import ScrollBox from "./ScrollBox"
+import IterationSample from './IterationSample';
 
-const App = () => {
-  // return <MyComponent name="React~" favoriteNumber={7}>리액트~</MyComponent>;
-  // return <EventPractice />;
-  return <ValidationSample />;
+class App extends Component {
+  render(){
+    return(
+      // <div>
+      //   <ScrollBox ref={(ref) => this.scrollBox = ref} />
+      //   <button onClick={() => this.scrollBox.scrollToBottom()}>맨 밑으로</button>
+      // </div>
+      <IterationSample /> 
+    );
+  }
 };
 
 export default App;
